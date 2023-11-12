@@ -2,7 +2,7 @@ import { ApiResponse} from "../types/apiTypes";
 
 export async function fetchData() : Promise<ApiResponse | null>{
     try {
-        const response = await fetch('URL_SPRINGBOOT');
+        const response = await fetch('http://localhost:8080/api/deals/1');
         if (!response.ok){
             throw new Error('Network response not OK');
         }
